@@ -1,0 +1,19 @@
+{
+  "name": "pep/i18n",
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "authors": [
+    {
+      "name": "Pepijn Senders",
+      "email": "p.senders92@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Pep\\": "src/Pep"
+    }
+  }
+}
