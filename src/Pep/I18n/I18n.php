@@ -15,12 +15,12 @@ class I18n {
     $this->locale = $locale;
   }
 
-  public static function fromHttpAccept($httpAccept) {
-     $locale = Locale::parse($httpAccept);
+  public static function parse($httpAccept) {
+    $locale = Locale::parse($httpAccept);
 
-     $i18n = new self($locale);
+    $i18n = new self($locale);
 
-     return $i18n;
+    return $i18n;
   }
 
   public function getLocale() {

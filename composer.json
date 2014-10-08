@@ -1,5 +1,6 @@
 {
   "name": "pep/i18n",
+  "version": "0.0.1",
   "require-dev": {
     "phpunit/phpunit": "*"
   },
