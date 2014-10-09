@@ -3,6 +3,7 @@
 namespace Pep\I18n\Locale;
 
 use Pep\I18n\Locale\LocaleException;
+use \Locale as PHPLocale;
 
 class Locale {
 
@@ -34,7 +35,7 @@ class Locale {
       $localeString = array_search($maxQ, $locales);
     }
 
-    $parsedLocale = locale_parse($localeString);
+    $parsedLocale = PHPLocale::parseLocale($localeString);
     $locale = new self(
       @$parsedLocale['language'],
       @$parsedLocale['region'],
